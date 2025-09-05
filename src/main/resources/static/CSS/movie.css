@@ -1,0 +1,95 @@
+body{
+background-color:#1c1c1e;
+margin-top:30px;
+margin-left:80px;
+}
+
+h1,h5,p , span{
+    color:#eaeaea;
+    font-family: "Montserrat", sans-serif;
+}
+
+#introduction{
+    align:left;
+    margin-bottom:50px;
+}
+
+#container {
+    display: flex;
+    align-items: flex-start; /* Align the text to the top of the image */
+    gap: 10px; /* Add spacing between the poster and the text */
+    margin-bottom:30px;
+}
+
+#poster-div{
+  /*  display:inline-block;   */
+  flex-shrink: 0; /* Ensure the image does not shrink */
+}
+
+
+#overview-div{
+
+  /*  display:inline-block;
+    vertical-align:top;  */
+
+    lex-grow: 1; /* Allow the text to take available space */
+    max-width: calc(100% - 310px); /* Optional: Prevent text from overflowing next to a 300px wide image */
+
+
+}
+
+/* #rating-panel{
+
+    display:inline-block;
+    text-align:center;
+
+
+} */
+
+#rating-panel {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements horizontally */
+    justify-content: center; /* Center align vertically (if the container has height) */
+    margin: 20px auto; /* Add vertical spacing and center horizontally */
+    text-align: center; /* Center align text inside the panel */
+    width: 80%; /* Optional: Control the width for better alignment */
+    max-width: 400px; /* Optional: Limit maximum width for small screens */
+    padding: 20px; /* Add padding for better spacing */
+    border: 1px solid #eaeaea; /* Optional: Add a border for clarity */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    background-color: #2c2c2e; /* Optional: Background for visibility */
+}
+
+/* Hover and focus effects for the input */
+#rating-panel input[type="text"]:hover,
+#rating-panel input[type="text"]:focus {
+    border-color: #007aff; /* Highlight border on hover or focus */
+    background-color: #ffffff; /* Brighten the background */
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5); /* Subtle glow effect */
+}
+
+
+/* Style for the submit button */
+/*  #rating-submit-button {
+    width: auto;
+    padding: 6px 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007aff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}          */
+
+/* Hover and focus effects for the button */
+/* #rating-submit-button:hover,
+#rating-submit-button:focus {
+    background-color: #005bb5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}   */

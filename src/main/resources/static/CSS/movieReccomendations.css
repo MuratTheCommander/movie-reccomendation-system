@@ -1,0 +1,74 @@
+body{
+
+background-color:#1c1c1e;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+h1 {
+    margin-top: 40px;
+    width: auto;
+    text-align: center;
+    color:#eaeaea;
+}
+
+h3{
+
+    display:inline-block;
+    color:#eaeaea;
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: right;
+    border-bottom:3px #3279a8 solid;
+}
+
+#nav-elements {
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-bottom:5px;
+}
+
+#nav-elements * {
+    margin-top: 10px;
+    margin-left: 20px;
+    color:#eaeaea;
+}
+
+#nav-elements a {
+    color:#eaeaea;;
+    font-size: 20px;
+}
+
+ol{
+
+    margin-left:40px;
+
+}
+
+ol li::marker{
+
+    color:#eaeaea;
+    margin-right:3px;
+
+}
+
+li{
+ border-bottom:3px solid #eaeaea;
+ margin: 8px 0 8px 0;
+}
+
+#link-to-moviePage{
+    margin-left:50px;
+    color:#eaeaea;
+}
+
+#link-to-moviePage:hover{
+
+    color:aliceblue;
+
+}
+

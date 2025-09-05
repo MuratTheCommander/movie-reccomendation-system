@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<nav id="navbar">
+    <div id="nav-elements">
+        <a id="home-link" th:href="@{/collaborative}" style="color: aliceblue;font-size: 25px;"><i class="fa-solid fa-people-arrows"></i></a>
+        <a id="home-link" th:href="@{/contentBased}" style="color: aliceblue;font-size: 25px;"><i class="fa-solid fa-video"></i></a>
+    </div>
+</nav>
+
+<div class="main-div">
+    <h1>Welcome to Movie Recommender</h1>
+    <h3>Please find your watched movies and rate them</h3>
+    <form id="search-form">
+        <input type="search" id="search-input" placeholder="search movies">
+    </form>
+    <div id="similar-searches-container">
+        <ul id="similar-searches"></ul>
+    </div>
+</div>
+
+<!-- Link to the JavaScript file -->
+<script src="/JS/functions.js"></script>
+</body>
+</html>

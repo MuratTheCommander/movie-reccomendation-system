@@ -1,0 +1,31 @@
+body{
+
+    background-color:#e4f2ed;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+h1 {
+    margin-top: 40px;
+    width: auto;
+    text-align: center;
+    color:#3279a8;
+}
+
+h3{
+
+display:inline-block;
+
+}
+
+ol{
+
+    margin-left:100px;
+
+}
+
+li{
+ border-bottom:3px solid #e4f2ed;
+
+}
+

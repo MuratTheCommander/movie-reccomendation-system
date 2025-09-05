@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/movieReccomendations.css">
+
+    <title>Title</title>
+</head>
+<body>
+
+<nav id="navbar">
+    <div id="nav-elements">
+        <a id="home-link" th:href="@{/}" style="color: aliceblue;font-size: 25px;"><i class="fa-solid fa-house"></i></a>
+    </div>
+</nav>
+
+<!-- <h1>Movies similar to your liked movies</h1> -->
+<h1 th:text="${title}"></h1>
+
+<ol>
+  <!--  <li  th:each="entry : ${contentBasedMovies}">   -->
+    <li  th:each="entry : ${movies}">
+        <h3 th:text="${entry.value}"></h3>
+        <a th:href="@{/getMoviePage/{movieId} (movieId = ${entry.key})}"><i id="link-to-moviePage" class="fa-solid fa-right-long"></i></a>
+   <!--     <hr>    -->
+    </li>
+
+
+
+</ol>
+
+
+
+</body>
+</html>
