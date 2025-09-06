@@ -4,6 +4,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+.env
+.mailmap
+.gitattributes
+
 ### STS ###
 .apt_generated
 .classpath

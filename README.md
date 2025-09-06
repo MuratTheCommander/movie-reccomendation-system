@@ -103,5 +103,20 @@ This is an **active, evolving project**. Planned improvements include:
 - Scaling tests with larger MovieLens datasets  
 - Adding visualizations of recommendation quality  
 
+## Environment Setup
+
+This project requires a TMDB API Key (v3 auth, 32 characters) for retrieving posters and metadata.
+
+⚠️ Do not commit your TMDB API key to version control. Keep it private.
+
+Setting the API Key
+IntelliJ IDEA
+
+- Open Run → Edit Configurations.
+
+- Select your Spring Boot run configuration.
+
+- Add an environment variable: TMDB_API_KEY=your_tmdb_v3_key_here
+
 ---
 *Author: MuratTheCommander* • *License: MIT*
